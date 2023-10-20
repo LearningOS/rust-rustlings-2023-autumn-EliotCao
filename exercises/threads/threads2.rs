@@ -6,7 +6,6 @@
 //
 // Execute `rustlings hint threads2` or use the `hint` watch subcommand for a
 // hint.
-S
 
 use std::sync::{Arc, Mutex};
 use std::thread;
