@@ -29,7 +29,9 @@
 
 
 extern "Rust" {
+    #[no_mangle]
     fn my_demo_function(a: u32) -> u32;
+    #[no_mangle]
     #[link_name = "my_demo_function"]
     fn my_demo_function_alias(a: u32) -> u32;
 }
@@ -39,11 +41,6 @@ mod Foo {
     #[no_mangle]
     fn my_demo_function(a: u32) -> u32 {
         a
-    }
-
-    #[no_mangle]
-    fn my_demo_function_alias(a: u32) -> u32 {
-        my_demo_function(a)
     }
 }
 

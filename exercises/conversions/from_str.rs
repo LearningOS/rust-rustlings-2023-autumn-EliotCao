@@ -9,6 +9,7 @@
 // Execute `rustlings hint from_str` or use the `hint` watch subcommand for a
 // hint.
 
+use std::f32::consts::E;
 use std::num::ParseIntError;
 use std::str::FromStr;
 
